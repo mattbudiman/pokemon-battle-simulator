@@ -1,8 +1,3 @@
-package budiman.matt.pokemon_simulator.moves;
-
-import budiman.matt.pokemon_simulator.meta.Category;
-import budiman.matt.pokemon_simulator.meta.Type;
-
 public class QuickAttack extends Move
 {
 	public static final String NAME = "Quick Attack";
@@ -12,7 +7,7 @@ public class QuickAttack extends Move
 	public static final double ACCURACY = 1;
 	public static final int PP = 30;
 	public static final int PRIORITY = 1;
-	
+
 	public QuickAttack()
 	{
 		super(NAME, TYPE, CATEGORY, POWER, ACCURACY, PP, PRIORITY);

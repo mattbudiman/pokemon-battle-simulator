@@ -1,8 +1,4 @@
-package pokemon;
-
 import java.util.Scanner;
-
-import budiman.matt.pokemon_simulator.pokemon.Pokemon;
 
 /**
  * A pokemon battle.
@@ -16,7 +12,7 @@ public class Battle
 	private int turns;
 	private Scanner in;
 	private boolean active;
-	
+
 	public Battle(Pokemon a, Pokemon b)
 	{
 		pokemon1 = a;
@@ -27,7 +23,7 @@ public class Battle
 		hpMax1 = a.getHP();
 		hpMax2 = b.getHP();
 	}
-	
+
 	/**
 	 * Determines whether the battle is still ongoing.
 	 * @return true if ongoing, false otherwise
@@ -36,7 +32,7 @@ public class Battle
 	{
 		return active;
 	}
-	
+
 	/**
 	 * The next turn of the battle.
 	 */
@@ -82,7 +78,7 @@ public class Battle
 			move(pokemon2, j, pokemon1, i);
 		}
 	}
-	
+
 	/**
 	 * The two pokemon make their moves.
 	 * @param first the first pokemon to move

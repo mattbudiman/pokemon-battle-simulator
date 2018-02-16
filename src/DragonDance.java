@@ -1,9 +1,3 @@
-package budiman.matt.pokemon_simulator.moves;
-
-import budiman.matt.pokemon_simulator.meta.Category;
-import budiman.matt.pokemon_simulator.meta.Type;
-import budiman.matt.pokemon_simulator.pokemon.Pokemon;
-
 public class DragonDance extends Move
 {
 	public static final String NAME = "Dragon Dance";
@@ -13,12 +7,12 @@ public class DragonDance extends Move
 	public static final double ACCURACY = 1;
 	public static final int PP = 20;
 	public static final int PRIORITY = 0;
-	
+
 	public DragonDance()
 	{
 		super(NAME, TYPE, CATEGORY, POWER, ACCURACY, PP, PRIORITY);
 	}
-	
+
 	public boolean use(Pokemon attacker, Pokemon defender)
 	{
 		System.out.println(attacker.getName() + " used " + NAME);

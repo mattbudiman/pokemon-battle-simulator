@@ -1,8 +1,3 @@
-package budiman.matt.pokemon_simulator.moves;
-
-import budiman.matt.pokemon_simulator.meta.Category;
-import budiman.matt.pokemon_simulator.meta.Type;
-
 public class Flamethrower extends Move
 {
 	public static final String NAME = "Flamethrower";
@@ -12,7 +7,7 @@ public class Flamethrower extends Move
 	public static final double ACCURACY = 1;
 	public static final int PP = 15;
 	public static final int PRIORITY = 0;
-	
+
 	public Flamethrower()
 	{
 		super(NAME, TYPE, CATEGORY, POWER, ACCURACY, PP, PRIORITY);

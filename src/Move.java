@@ -1,9 +1,3 @@
-package budiman.matt.pokemon_simulator.moves;
-
-import budiman.matt.pokemon_simulator.meta.Category;
-import budiman.matt.pokemon_simulator.meta.Type;
-import budiman.matt.pokemon_simulator.pokemon.Pokemon;
-
 /**
  * Models a pokemon move.
  */
@@ -16,7 +10,7 @@ public class Move
 	private double accuracy;
 	private int pp;
 	private int priority;
-	
+
 	public Move(String name, Type type, Category category, int power, double accuracy, int pp, int priority)
 	{
 		this.name = name;
@@ -27,7 +21,7 @@ public class Move
 		this.pp = pp;
 		this.priority = priority;
 	}
-	
+
 	/**
 	 * The attacker uses the move on the defender.
 	 * @param attacker the pokemon using the move
@@ -38,7 +32,7 @@ public class Move
 	{
 		System.out.println(attacker.getName() + " used " + this.name + ".");
 		System.out.println();
-		
+
 		double random = Math.random() * .15 + .85;
 		double stab = 1;
 		if (attacker.getType1() == this.type || attacker.getType2() == this.type)
@@ -100,7 +94,7 @@ public class Move
 		this.pp = this.pp - 1;
 		return true;
 	}
-	
+
 	/**
 	 * Gets the name of the move.
 	 * @return the move name
@@ -109,7 +103,7 @@ public class Move
 	{
 		return name;
 	}
-	
+
 	/**
 	 * Gets the type of the move.
 	 * @return the move type
@@ -118,7 +112,7 @@ public class Move
 	{
 		return type;
 	}
-	
+
 	/**
 	 * Gets the category of the move.
 	 * @return the move category
@@ -127,7 +121,7 @@ public class Move
 	{
 		return category;
 	}
-	
+
 	/**
 	 * Gets the power of the move.
 	 * @return the move power
@@ -136,7 +130,7 @@ public class Move
 	{
 		return power;
 	}
-	
+
 	/**
 	 * Sets the power of the move.
 	 * @param value the new power
@@ -145,7 +139,7 @@ public class Move
 	{
 		this.power = value;
 	}
-	
+
 	/**
 	 * Gets the accuracy of the move.
 	 * @return the move accuracy
@@ -154,7 +148,7 @@ public class Move
 	{
 		return accuracy;
 	}
-	
+
 	/**
 	 * Gets the pp of the move.
 	 * @return the move pp
@@ -163,7 +157,7 @@ public class Move
 	{
 		return pp;
 	}
-	
+
 	/**
 	 * Sets the pp of the move to some new value.
 	 * @param value the new pp value
@@ -172,7 +166,7 @@ public class Move
 	{
 		this.pp = value;
 	}
-	
+
 	/**
 	 * Gets the priority of the move.
 	 * @return the priority of the move

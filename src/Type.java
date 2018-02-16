@@ -1,5 +1,3 @@
-package budiman.matt.pokemon_simulator.meta;
-
 /**
  * An enum type consisting of the pokemon types.
  */
@@ -7,7 +5,7 @@ public enum Type
 {
 	BUG, DARK, DRAGON, ELECTRIC, FAIRY, FIGHTING, FIRE, FLYING, GHOST, GRASS, GROUND,
 	ICE, NORMAL, POISON, PSYCHIC, ROCK, STEEL, WATER;
-	
+
 	public static final double[][] TYPE_CHART = new double[][]{
 		{  1,  2,  1,  1, .5, .5, .5, .5, .5,  2,  1,  1,  1, .5,  2,  1, .5,  1},
 		{  1, .5,  1,  1, .5, .5,  1,  1,  2,  1,  1,  1,  1,  1,  2,  1,  1,  1},
@@ -28,7 +26,7 @@ public enum Type
 		{  1,  1,  1, .5,  2,  1, .5,  1,  1,  1,  1,  2,  1,  1,  1,  2, .5, .5},
 		{  1,  1, .5,  1,  1,  1,  2,  1,  1, .5,  2,  1,  1,  1,  1,  2,  1, .5}
 	};
-	
+
 	/**
 	 * Determines how effective an attacking type is against a defending type.
 	 * @param attacking the attacking type
