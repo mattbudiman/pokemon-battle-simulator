@@ -9,4 +9,4 @@ computer controls Gyarados. To make a move, simply input the number of the move 
 Very basic pokemon game mechanics, including type effectiveness, stage, EVs, and IVs are incorporated.
 
 ## Running the Simulator
-To run the simulator on the command line, in the `src/` directory and run `java battle.VersusBattle`.
+To run the simulator on the command line, go into the `src/` directory and run `java battle.VersusBattle`.
